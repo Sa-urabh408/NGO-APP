@@ -28,7 +28,10 @@
 ---
 
 ## 📸 Screenshots
-*Screenshots will be added soon!*
+
+| Home Screen | Donation Screen | User History | Admin Panel |
+| :---: | :---: | :---: | :---: |
+| <img src="screenshots/home.png" width="200"/> | <img src="screenshots/donation.png" width="200"/> | <img src="screenshots/history.png" width="200"/> | <img src="screenshots/admin.png" width="200"/> |
 
 ---
 
