@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home1"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"
+            android:contentDescription="Logo" />
+
+        <!-- Text container -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNITY CARE FOUNDATION"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connecting Hearts, Building Futures"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Welcome text -->
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ViewFlipper
+                android:autoStart="true"
+                android:flipInterval="2000"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right"
+                android:id="@+id/homeslider"
+                android:layout_width="500dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+
+                >
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/banner4">
+
+                </ImageView>
+
+                <ImageView
+                    android:src="@drawable/banner5"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    >
+                </ImageView>
+                <ImageView
+                    android:src="@drawable/banner6"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp">
+                </ImageView>
+
+
+            </ViewFlipper>
+
+            <!--tab area start -->
+            <GridLayout
+                android:alignmentMode="alignMargins"
+                android:useDefaultMargins="true"
+                android:padding="20dp"
+                android:rowCount="2"
+                android:layout_marginTop="30dp"
+                android:columnCount="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- about us tab-->
+                <LinearLayout
+                    android:id="@+id/Aboutus"
+                    android:background="@drawable/tabs"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    >
+                    <ImageView
+                        android:src="@drawable/about"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp">
+                    </ImageView>
+
+                    <TextView
+                        android:text="About us "
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/donatationbox"
+                    android:background="@drawable/tabs"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    >
+                    <ImageView
+                        android:src="@drawable/don1"
+                        android:layout_width="120dp"
+                        android:layout_height="70dp">
+                    </ImageView>
+
+                    <TextView
+                        android:text="Donation Box "
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/gallery"
+                    android:background="@drawable/tabs"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    >
+                    <ImageView
+                        android:src="@drawable/galler"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp">
+                    </ImageView>
+
+                    <TextView
+                        android:text="Gallery "
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/volentear"
+                    android:background="@drawable/tabs"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    >
+                    <ImageView
+                        android:src="@drawable/con2"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp">
+                    </ImageView>
+
+                    <TextView
+                        android:text=" Join Volentear!"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/Event"
+                    android:background="@drawable/tabs"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    >
+                    <ImageView
+                        android:src="@drawable/event"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp">
+                    </ImageView>
+
+                    <TextView
+                        android:text="Events "
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/contactus"
+                    android:background="@drawable/tabs"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    >
+                    <ImageView
+                        android:src="@drawable/phone"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp">
+                    </ImageView>
+
+                    <TextView
+                        android:text="Contact us "
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <include
+        layout="@layout/footernav">
+    </include>
+
+</LinearLayout>

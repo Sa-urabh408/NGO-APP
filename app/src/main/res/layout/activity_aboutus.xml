@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
+
+    <!-- ===== SCROLLABLE CONTENT ===== -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ===== HERO SECTION ===== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#1A237E"
+                android:gravity="center"
+                android:padding="30dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/logo"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="NGO Logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UNITY CARE FOUNDATION"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:letterSpacing="0.05" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connecting Hearts, Building Futures"
+                    android:textColor="#B3E5FC"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center" />
+
+                <!-- Stats row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="600+"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Children"
+                            android:textColor="#B3E5FC"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View android:layout_width="1dp" android:layout_height="40dp" android:background="#4FC3F7" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25+"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Health Camps"
+                            android:textColor="#B3E5FC"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View android:layout_width="1dp" android:layout_height="40dp" android:background="#4FC3F7" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100+"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Volunteers"
+                            android:textColor="#B3E5FC"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ===== CONTENT SECTION ===== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <!-- Who We Are Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardWho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    card_view:cardCornerRadius="14dp"
+                    card_view:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#1565C0"
+                            android:padding="14dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="🏢  Who We Are"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="We are a non-government organization dedicated to creating lasting change in underserved communities through education, health, and awareness initiatives. Founded in 2018, we operate across Nagpur and surrounding areas to uplift lives."
+                            android:textColor="#222222"
+                            android:textSize="14sp"
+                            android:lineSpacingMultiplier="1.5" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Vision Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardVision"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    card_view:cardCornerRadius="14dp"
+                    card_view:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#6A1B9A"
+                            android:padding="14dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="🔮  Our Vision"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="To build a world where every person has equal access to education, healthcare, and opportunities to grow with dignity — regardless of their background or circumstances."
+                            android:textColor="#222222"
+                            android:textSize="14sp"
+                            android:lineSpacingMultiplier="1.5" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Mission Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    card_view:cardCornerRadius="14dp"
+                    card_view:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#C62828"
+                            android:padding="14dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="🎯  Our Mission"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✅  Organize donation drives" android:textColor="#222222" android:textSize="14sp" android:layout_marginBottom="8dp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✅  Support education &amp; healthcare" android:textColor="#222222" android:textSize="14sp" android:layout_marginBottom="8dp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✅  Empower youth and women" android:textColor="#222222" android:textSize="14sp" android:layout_marginBottom="8dp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✅  Spread awareness through campaigns" android:textColor="#222222" android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Values Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardValues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    card_view:cardCornerRadius="14dp"
+                    card_view:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#2E7D32"
+                            android:padding="14dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="❤️  Our Values"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <!-- Values as 2x2 grid -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="12dp">
+
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="#E8F5E9" android:padding="14dp" android:layout_marginEnd="6dp">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💙" android:textSize="28sp" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Compassion" android:textColor="#1B5E20" android:textSize="13sp" android:textStyle="bold" android:gravity="center" />
+                            </LinearLayout>
+
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="#E3F2FD" android:padding="14dp" android:layout_marginStart="6dp">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔍" android:textSize="28sp" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Transparency" android:textColor="#0D47A1" android:textSize="13sp" android:textStyle="bold" android:gravity="center" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="12dp">
+
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="#FFF3E0" android:padding="14dp" android:layout_marginEnd="6dp">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💪" android:textSize="28sp" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Empowerment" android:textColor="#BF360C" android:textSize="13sp" android:textStyle="bold" android:gravity="center" />
+                            </LinearLayout>
+
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="#F3E5F5" android:padding="14dp" android:layout_marginStart="6dp">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🤝" android:textSize="28sp" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Unity" android:textColor="#6A1B9A" android:textSize="13sp" android:textStyle="bold" android:gravity="center" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Join Us Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardJoin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    card_view:cardCornerRadius="14dp"
+                    card_view:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#1A237E"
+                        android:padding="24dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🤝 Join Us"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="You don't need to have everything to help someone. Join us as a volunteer, donor, or supporter and help create real change in someone's life."
+                            android:textColor="#B3E5FC"
+                            android:textSize="14sp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:lineSpacingMultiplier="1.5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🙏 Thank You for Your Support!"
+                            android:textColor="#FFD54F"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="16dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ===== FOOTER NAV ===== -->
+    <include layout="@layout/footernav" />
+
+</LinearLayout>

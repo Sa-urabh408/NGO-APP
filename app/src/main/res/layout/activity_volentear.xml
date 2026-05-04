@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Volentear"
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
+
+    <!-- ===== TOP HEADER ===== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/logo1"
+            android:contentDescription="Logo" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNITY CARE FOUNDATION"
+                android:textColor="#1A237E"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <!-- Welcome text with user name -->
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                android:textColor="#C30FCC"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/profile1"
+            android:contentDescription="Profile" />
+    </LinearLayout>
+
+    <!-- ===== SCROLLABLE CONTENT ===== -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Heading Banner -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#1A237E"
+                android:padding="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🤝 Join as a Volunteer"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make a difference in someone's life today!"
+                    android:textColor="#B3E5FC"
+                    android:textSize="13sp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Form card -->
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/formCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="📋 Enter Your Details"
+                        android:textColor="#1A237E"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- First Name -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="First Name"
+                        android:textColor="#555555"
+                        android:textSize="13sp"
+                        android:layout_marginBottom="4dp" />
+                    <EditText
+                        android:id="@+id/vfname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your first name"
+                        android:background="@drawable/edittext"
+                        android:padding="14dp"
+                        android:inputType="textPersonName"
+                        android:textColor="#111111"
+                        android:layout_marginBottom="14dp" />
+
+                    <!-- Last Name -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Name"
+                        android:textColor="#555555"
+                        android:textSize="13sp"
+                        android:layout_marginBottom="4dp" />
+                    <EditText
+                        android:id="@+id/vlname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your last name"
+                        android:background="@drawable/edittext"
+                        android:padding="14dp"
+                        android:textColor="#111111"
+                        android:inputType="textPersonName"
+                        android:layout_marginBottom="14dp" />
+
+                    <!-- Mobile -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile Number"
+                        android:textColor="#555555"
+                        android:textSize="13sp"
+                        android:layout_marginBottom="4dp" />
+                    <EditText
+                        android:id="@+id/vmobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your mobile number"
+                        android:background="@drawable/edittext"
+                        android:padding="14dp"
+                        android:textColor="#111111"
+                        android:inputType="phone"
+                        android:layout_marginBottom="14dp" />
+
+                    <!-- Message -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Why do you want to volunteer?"
+                        android:textColor="#555555"
+                        android:textSize="13sp"
+                        android:layout_marginBottom="4dp" />
+                    <EditText
+                        android:id="@+id/vmessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Share your motivation..."
+                        android:background="@drawable/edittext"
+                        android:padding="14dp"
+                        android:textColor="#111111"
+                        android:minLines="3"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:layout_marginBottom="20dp" />
+
+                    <!-- Submit Button -->
+                    <Button
+                        android:id="@+id/vbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:text="🚀 Submit Application"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#1A237E"
+                        android:stateListAnimator="@null" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Info strip at bottom -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100+ Active Volunteers  •  Est. 2018"
+                    android:textColor="#777777"
+                    android:textSize="12sp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ===== FOOTER NAV ===== -->
+    <include layout="@layout/footernav" />
+
+</LinearLayout>

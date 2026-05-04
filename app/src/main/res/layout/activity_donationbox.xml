@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".donationbox">
+
+    <!-- ===== TOP HEADER ===== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:contentDescription="NGO Logo" />
+
+        <!-- Welcome Text aligned properly next to logo -->
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="Welcome, Guest!"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💝"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+
+            <!-- THE DONATION BOX (Keeping the user's preferred style) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/donate_btn"
+                android:padding="26dp"
+                android:elevation="10dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Donation Box"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:shadowColor="#44000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Donation Amount"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp" />
+
+                <TextView
+                    android:id="@+id/selecteamount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 0"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp" />
+
+                <SeekBar
+                    android:id="@+id/amountseekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:progressTint="#1A237E"
+                    android:thumbTint="#1A237E"
+                    android:max="10000" />
+
+                <!-- Quick selection chips -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+                    <TextView android:id="@+id/chip100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹100" android:textColor="#FFFFFF" android:background="#44FFFFFF" android:padding="8dp" android:layout_margin="4dp" android:textStyle="bold" />
+                    <TextView android:id="@+id/chip500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹500" android:textColor="#FFFFFF" android:background="#44FFFFFF" android:padding="8dp" android:layout_margin="4dp" android:textStyle="bold" />
+                    <TextView android:id="@+id/chip1000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹1k" android:textColor="#FFFFFF" android:background="#44FFFFFF" android:padding="8dp" android:layout_margin="4dp" android:textStyle="bold" />
+                    <TextView android:id="@+id/chip5000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹5k" android:textColor="#FFFFFF" android:background="#44FFFFFF" android:padding="8dp" android:layout_margin="4dp" android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/mesageinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:hint="Message (Optional)"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:textColorHint="#777777"
+                    android:padding="14dp"
+                    android:background="@drawable/edittext"/>
+
+                <Button
+                    android:id="@+id/doantebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Donate Now 🚀"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#111111"
+                    android:stateListAnimator="@null" />
+            </LinearLayout>
+
+            <!-- HISTORY BUTTON -->
+            <Button
+                android:id="@+id/donationhis"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:text="📋 View Donation History"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#C62828"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FOOTER NAV -->
+    <include layout="@layout/footernav" />
+
+</LinearLayout>

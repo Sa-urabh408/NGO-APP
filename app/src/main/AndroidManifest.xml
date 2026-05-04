@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NGOApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".login_btn"
+            android:exported="false" />
+        <activity
+            android:name=".home3"
+            android:exported="false" />
+        <activity
+            android:name=".Event"
+            android:exported="false" />
+        <activity
+            android:name=".gallery"
+            android:exported="false" />
+        <activity
+            android:name=".Aboutus"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMessages"
+            android:exported="false" />
+        <activity
+            android:name=".AdminVolunteers"
+            android:exported="false" />
+        <activity
+            android:name=".Userlist"
+            android:exported="false" />
+        <activity
+            android:name=".Volentear"
+            android:exported="false" />
+        <activity
+            android:name=".adminpanel"
+            android:exported="false" />
+        <activity
+            android:name=".donationhistory"
+            android:exported="false" />
+        <activity
+            android:name=".donationbox"
+            android:exported="false" />
+        <activity
+            android:name=".contactus"
+            android:exported="false" />
+        <activity
+            android:name=".profile1"
+            android:exported="false" />
+        <activity
+            android:name=".logout"
+            android:exported="false" />
+        <activity
+            android:name=".user"
+            android:exported="false" />
+        <activity
+            android:name=".devloper"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity
+            android:name=".donation"
+            android:exported="false" />
+        <activity
+            android:name=".Home1"
+            android:exported="false" />
+        <activity
+            android:name=".signin"
+            android:exported="false" />
+        <activity
+            android:name=".signuppage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGalleryUpload"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPostEvent"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDonationList"
+            android:exported="false" />
+        <activity
+            android:name=".gradient"
+            android:exported="false" />
+        <activity
+            android:name=".loginpage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

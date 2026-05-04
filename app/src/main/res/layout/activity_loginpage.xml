@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient"
+    tools:context=".loginpage">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="120dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:text="UNITY CARE FOUNDATION"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="Connecting Hearts, Building Futures"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/usermail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:hint="Enter your Email"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textColorHint="#AAAAAA"
+            android:background="@drawable/edittext" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/userpass"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:hint="Enter your password"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textColorHint="#AAAAAA"
+            android:background="@drawable/edittext" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#D76969"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Guest Login -->
+        <Button
+            android:id="@+id/guestbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="Login with Guest"
+            android:textSize="15sp"
+            android:backgroundTint="#5D5454"
+            android:textColor="#FFFFFF" />
+
+        <!-- New User -->
+        <TextView
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="New User? Click here!"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
