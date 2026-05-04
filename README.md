@@ -28,11 +28,7 @@
 ---
 
 ## 📸 Screenshots
-*(Add your screenshots here! Make sure to replace the placeholder links with actual images from your GitHub repo after uploading)*
-
-| Home Screen | Donation Screen | User History | Admin Panel |
-| :---: | :---: | :---: | :---: |
-| <img src="screenshots/home.png" width="200"/> | <img src="screenshots/donation.png" width="200"/> | <img src="screenshots/history.png" width="200"/> | <img src="screenshots/admin.png" width="200"/> |
+*Screenshots will be added soon!*
 
 ---
 
